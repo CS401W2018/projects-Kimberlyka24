@@ -1,0 +1,53 @@
+h1, h2, h3 {
+    font-family: cursive;
+    color: #FFE5EC;
+}
+
+#title {
+    font-size: 35px;
+}
+
+body {
+    background-color: #FB6F92;
+}
+
+#last {
+    font-family: cursive;
+    color: #FF8FAB;
+}
+
+main {
+    color: #FFC2D1;
+    font-family: sans-serif;
+}
+
+p {
+    font-size: 17px;
+}
+
+a {
+    color: #3454D1;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+span {
+    font-weight: bolder;
+}
+
+dl {
+    font-size: 13px;
+}
+
+.dtstyle {
+    font-family: cursive;
+    font-weight: bolder;
+    color: #FFE5EC;
+}
+
+#emphasize {
+    color: #FFE5EC;
+}
+
+#de-emphasize {
+    color: #FF8FAB;
+}
