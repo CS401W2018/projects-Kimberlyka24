@@ -9,6 +9,9 @@ h1, h2, h3 {
 
 body {
     background-color: #FB6F92;
+    font-size: 17px;
+    font-family: sans-serif;
+    color: #FFC2D1;
 }
 
 #last {
@@ -16,14 +19,6 @@ body {
     color: #FF8FAB;
 }
 
-main {
-    color: #FFC2D1;
-    font-family: sans-serif;
-}
-
-p {
-    font-size: 17px;
-}
 
 a {
     color: #3454D1;
