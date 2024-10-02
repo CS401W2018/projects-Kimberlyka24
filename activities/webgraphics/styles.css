@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    background-image: url("Doge.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: "Brush Script MT", cursive;
+    text-align: center;
+    font-size: 120px;
+}
+
+img {
+    max-width: 20%;
+    height: auto;
+}
+
+#coin {
+    display: flex;
+    justify-content: center;
+}
+
+#question {
+    font-family: sans-serif;
+}
