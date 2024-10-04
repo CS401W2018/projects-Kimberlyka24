@@ -1,11 +1,3 @@
-body {
-    margin: 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-attachment: fixed;
-}
-
 body::before {
     content: "";
     position: absolute;
@@ -16,7 +8,7 @@ body::before {
     background-image: url("b.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     background-attachment: fixed;
     filter: blur(2px);
     z-index: -1;
