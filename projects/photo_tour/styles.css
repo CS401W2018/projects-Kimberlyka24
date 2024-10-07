@@ -1,0 +1,67 @@
+h1 {
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+nav a.active {
+    font-weight: bold;
+    color: red;
+    text-decoration: underline;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    background-attachment: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("sakura.png");
+    background-repeat: repeat;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+body {
+    font-size: 25px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.left {
+    float: left;
+    padding: 10px;
+}
+
+.right {
+    float: right;
+    padding: 10px;
+    background-image: url("japan1.png");
+    background-repeat: no-repeat;
+}
+
+ul {
+    list-style-image: url("red_dot.png");
+}
