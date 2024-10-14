@@ -1,0 +1,95 @@
+header {
+    font-family: "Protest Strike", sans-serif;
+    text-align: center;   
+}
+
+#highlight {
+    font-weight: bolder;
+    background-color: red;
+    padding: 15px;
+    border-radius: 20px;
+    border: 5px solid black;
+    text-shadow: 2px 2px 5px white;
+    margin: 10px;
+    box-shadow: 2px 2px 5px white;
+    height: auto;
+    width: auto;
+}
+
+nav {
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    background-color: green;
+    padding: 10px;
+    margin: 10px;
+    font-family: "Protest Strike", sans-serif;
+    color: white;
+    height: auto;
+    width: auto;
+}
+
+nav a:hover {
+    color: black;
+}
+
+body {
+    background-color: orange;
+    font-size: 20px;
+}
+
+#question {
+    padding-left: 42px;
+    font-family: "Protest Strike", sans-serif;
+    margin: 30px auto 0px auto;
+    text-shadow: 2px 2px 2px red;
+}
+
+#text {
+    background-color: white;
+    padding: 10px 540px 10px 20px;
+    text-transform: uppercase;
+}
+
+figure {
+    border: 10px solid black;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 30px;
+    font-family: "East Sea Dokdo", sans-serif;
+    font-style: italic;
+}
+
+#endlogo {
+    background-image: url("beyblade_logo.png");
+    background-repeat: no-repeat;
+    height: auto;
+    width: auto;
+    padding: 50px
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+small, p {
+    font-family: "Coiny", system-ui;
+}
+
+p {
+    text-align: left;
+}
