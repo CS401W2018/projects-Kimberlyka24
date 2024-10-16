@@ -1,0 +1,8 @@
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 25px;
+    font-family: "Permanent Marker", cursive;
+}
