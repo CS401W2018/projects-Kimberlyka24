@@ -1,0 +1,63 @@
+body {
+    background-image: url('background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 25px;
+    font-family: "Permanent Marker", cursive;
+}
+
+nav {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: red;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    width: 250px;
+    border: thin solid white;
+}
+
+.card img {
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        border-bottom: thin solid white;
+    }
+
+    body {
+        background-image: url(background.jpg);
+    }
+
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 100%;
+        margin: auto 10px;
+    }
+}
