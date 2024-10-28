@@ -1,0 +1,99 @@
+.container {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+aside {
+    width: 25%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: orange;
+    width: 100%;
+}
+
+header h1, figcaption, a, h4 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+p, li {
+    font-family: "Hind Siliguri", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+
+nav a {
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+
+.clear {
+    clear: both;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figure img {
+    max-width: 100%;
+}
+
+main {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+article {
+    width: 30%;
+    box-shadow: 4px 4px 8px #00000033;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    main {
+        width: 100%;
+        flex-direction: column;
+        order: -1;
+    }
+
+    article {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+}
+
+@media print {
+    header, footer, nav {
+        display: none;
+    }
+}
