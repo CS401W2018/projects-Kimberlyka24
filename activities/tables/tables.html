@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables</title>
 </head>
@@ -10,7 +11,7 @@
         <h1>My Class Schedule</h1>
     </header>
     <main>
-        <table border="1">
+        <table class="schedule">
             <thead>
                 <tr>
                     <th>Dept.</th><th>Number</th><th>Time</th><th>Location</th><th>Credits</th>
@@ -39,9 +40,28 @@
             <tfoot>
                 <tr>
                     <th colspan="4" id="total-credits">Total Credits</th>
+                    <td headers="total-credits">12</td>
                 </tr>
             </tfoot>
         </table>
+        <br>
+        <ul>
+            <li>
+                <h4>Why don't we use the border property?</h4>
+                <p>Depending on the use-case, it can be because of design aesthetics reasons. </p>
+            </li>
+            <li>
+                <h4>What is the easiest way to color every other row a different color?</h4>
+                <p>We can use the nth-child pseudo-class in CSS to color every other row.</p>
+            </li>
+            <li>
+                <h4>When should we use a table?</h4>
+                <p>A table is best used when comparing data, making data entry forms, and for accessibility.</p>
+            </li>
+        </ul>
     </main>
+    <footer>
+        <small>&copy; 2024 Kim Joshua Dumale</small>
+    </footer>
 </body>
 </html>
