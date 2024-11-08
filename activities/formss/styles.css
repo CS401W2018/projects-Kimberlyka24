@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+}
+
+fieldset {
+    box-shadow: 3px 3px 3px rgba(20,20,20,0.5);
+}
+
+legend {
+    border: thin solid #000;
+    background-color: blue;
+    padding: 10px;
+    color: white;
+}
+
+.form-row {
+    display: flex;
+}
+
+.form-row label {
+    width: 100px;
+    text-align: right;
+}
