@@ -3,10 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <h1>Sign Up Page</h1>
+    </header>
+    <main>
+        <form method="post">
+            <fieldset>
+                <legend>Sign Up Details</legend>
+                <div class="formSUD">
+                    <label for="user">Username:</label>
+                    <input type="text" id="user" name="user" required>
+                </div>
+
+                <div class="formSUD">
+                    <label for="pass">Password:</label>
+                    <input type="password" id="pass" name="pass" required>
+                </div>
+
+                <div class="formSUD">
+                    <label for="pass2">Confirm Password:</label>
+                    <input type="password" id="pass2" name="pass2" required>
+                </div>
+
+                <div class="formSUD">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="formSUD">
+                    <label for="birth">Birthdate:</label>
+                    <input type="date" id="birth" name="birth" required>
+                </div>
+
+                <div class="formSUD">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="male">Female</label>
+                </div>
+
+                <div class="formSUD">
+                    <label for="region">Region</label>
+                    <select id="region" name="region">
+                        <option value="usa">USA</option>
+                        <option value="asia">Asia</option>
+                        <option value="africa">Africa</option>
+                        <option value="europe">Europe</option>
+                        <option value="middle-east">Middle East</option>
+                        <option value="pacific">Pacific</option>
+                        <option value="russia">Russia</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="formSUD">
+                    <label for="feedback">Feedback:</label>
+                    <textarea id="feedback" name="feedback" rows="3"></textarea>
+                </div>
+
+                <div class="formSUD">
+                    <input type="checkbox" id="check" name="check">
+                    <label for="check" class="agree">I agree to the terms and conditions</label>
+                </div>
+
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </main>
     <footer>
         <small>&copy; 2024 Kim Joshua Dumale</small>
     </footer>
