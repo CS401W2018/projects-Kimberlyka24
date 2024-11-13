@@ -6,6 +6,32 @@
     <title>Submit Test</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Form Submission Results</h1>
+    </header>
+
+    <main>
+        <h3>Submitted Data:</h3>
+        <ul>
+            <li><strong>Username:</strong> <span id="user"></span></li>
+            <li><strong>Email:</strong> <span id="email"></span></li>
+            <li><strong>Gender:</strong> <span id="gender"></span></li>
+            <li><strong>Region:</strong> <span id="region"></span></li>
+            <li><strong>Feedback:</strong> <span id="feedback"></span></li>
+        </ul>
+    </main>
+
+    <footer>
+        <small>&copy; 2024 Kim Joshua Dumale</small>
+    </footer>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById("user").textContent = urlParams.get("user");
+        document.getElementById("email").textContent = urlParams.get("email");
+        document.getElementById("gender").textContent = urlParams.get("gender");
+        document.getElementById("region").textContent = urlParams.get("region");
+        document.getElementById("feedback").textContent = urlParams.get("feedback");
+    </script>
 </body>
 </html>
