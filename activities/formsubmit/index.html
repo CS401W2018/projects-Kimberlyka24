@@ -12,7 +12,7 @@
         <h1>Sign Up Page</h1>
     </header>
     <main>
-        <form action="test.html" method="get">
+        <form action="test.html" method="get" id="g">
             <fieldset>
                 <legend>Sign Up Details</legend>
                 <div class="formSUD">
@@ -96,5 +96,21 @@
     <footer>
         <small>&copy; 2024 Kim Joshua Dumale</small>
     </footer>
+    <script>
+        document.getElementById("g").addEventListener("submit",function(event) {
+            event.preventDefault();
+            const user = document.getElementById("user").value;
+            const email = document.getElementById("email").value;
+            const region = document.getElementById("region").value;
+            const feedback = document.getElementById("feedback").value;
+            const formData = {
+                user: user,
+                email: email,
+                region: region,
+                feedback: feedback
+            }
+            alert("You submitted the form!");
+        })
+    </script>
 </body>
 </html>
