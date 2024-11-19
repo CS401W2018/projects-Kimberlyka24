@@ -1,5 +1,5 @@
 function handleFormSubmit(event) {
-    
+
     event.preventDefault();
 
     const formData = {
@@ -57,5 +57,3 @@ function handleFormSubmit(event) {
     const queryString = new URLSearchParams(formData).toString();
     xhr.send(queryString);
 }
-
-document.querySelector("form").addEventListener("submit", handleFormSubmit);
