@@ -54,6 +54,5 @@ function handleFormSubmit(event) {
         }
     };
 
-    const queryString = new URLSearchParams(formData).toString();
-    xhr.send(queryString);
+    xhr.send(JSON.stringify(formData));
 }
