@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     form.addEventListener("submit", async (event) => {
         event.preventDefault();
 
-        const formData = {
+        const datas = {
             user: document.getElementById("user").value,
             password: document.getElementById("pass").value,
             email: document.getElementById("email").value,
@@ -16,10 +16,18 @@ document.addEventListener("DOMContentLoaded", function() {
             agree: document.getElementById("check").checked
         };
 
-        console.log("Form Data:", formData);
+        console.log("Form Data:", datas);
 
         try {
-            const response = await fetch("response.json");
+            const response = await fetch("response.json", {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            });
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
             const data = await response.json();
             success.textContent = data.message;
             form.reset();
