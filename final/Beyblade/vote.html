@@ -15,7 +15,7 @@
             <div class="menu">
                 <a href="index.html">Home</a>
                 <a href="#">History</a>
-                <a href="#">Bey List</a>
+                <a href="beylist.html">Bey List</a>
                 <a href="#">Launcher List</a>
                 <a href="table.html">Top Beys</a>
                 <a href="vote.html" class="active">Vote</a>
@@ -29,32 +29,42 @@
         <div class="vote-container">
             <h2>Submit Your Vote</h2>
             <p>We would love to know your favorite Beyblade! Please fill out the form below:</p>
-            <form action="submit_vote.php" method="post">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required placeholder="Enter your name"><br><br>
+            <form id="voteForm" method="GET">
+                <div class="formSUD">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name"><br><br>
+                </div>
+                <div class="formSUD">
+                    <label for="age">Age:</label><br>
+                    <input type="number" id="age" name="age" min="1" max="120" required placeholder="Enter your age"><br><br>
+                </div>
                 
-                <label for="age">Age:</label><br>
-                <input type="number" id="age" name="age" min="1" max="120" required placeholder="Enter your age"><br><br>
+                <div class="formSUD">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email"><br><br>
+                </div>
                 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required placeholder="Enter your email"><br><br>
+                <div class="formSUD">
+                    <label for="favorite">Favorite Beyblade:</label><br>
+                    <select id="favorite" name="favorite" required>
+                        <option value="" disabled selected>Select your favorite Beyblade</option>
+                        <option value="Dragoon">Dragoon</option>
+                        <option value="Dranzer">Dranzer</option>
+                        <option value="Draciel">Draciel</option>
+                        <option value="Wolborg">Wolborg</option>
+                        <option value="Pegasus">Pegasus</option>
+                    </select><br><br>
+                </div>
                 
-                <label for="favorite">Favorite Beyblade:</label><br>
-                <select id="favorite" name="favorite" required>
-                    <option value="" disabled selected>Select your favorite Beyblade</option>
-                    <option value="dragoon">Dragoon</option>
-                    <option value="dranzer">Dranzer</option>
-                    <option value="draciel">Draciel</option>
-                    <option value="wolborg">Wolborg</option>
-                    <option value="pegasus">Pegasus</option>
-                </select><br><br>
                 
                 <button type="submit">Submit Vote</button>
             </form>
+            <div id="result" class="success"></div>
         </div>
     </main>
     <footer>
         <small>&copy; 2024 Kim Joshua Dumale</small>
     </footer>
+    <script src="javascript.js"></script>
 </body>
 </html>

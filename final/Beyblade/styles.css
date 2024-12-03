@@ -90,12 +90,15 @@ form {
     margin-top: 20px;
 }
 
+label {
+    width: 150px;
+}
+
 input, select, button {
     font-size: 1rem;
     padding: 10px;
     margin-top: 10px;
     width: 100%;
-    max-width: 400px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -112,6 +115,46 @@ button {
 
 button:hover {
     background-color: #005bb5;
+}
+
+#result {
+    padding: 25px;
+}
+
+.formSUD {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.beycontainer {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+aside {
+    width: 25%;
+}
+
+.beylistmain {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figure img {
+    max-width: 100%;
+}
+
+article {
+    width: 30%;
+    box-shadow: 4px 4px 8px #00000033;
 }
 
 @media (max-width: 768px) {
@@ -132,6 +175,35 @@ button:hover {
         text-align: center;
         padding: 10px 0;
         font-size: 1.2rem;
+    }
+
+    .formSUD {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    label {
+        width: auto;
+        margin-bottom: 5px;
+    }
+
+    .beycontainer {
+        flex-direction: column;
+    }
+
+    .beylistmain {
+        width: 100%;
+        flex-direction: column;
+        order: -1;
+    }
+
+    article {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    aside {
+        width: 100%;
     }
 
 }
