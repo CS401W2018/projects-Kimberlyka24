@@ -12,8 +12,9 @@ nav {
     justify-content: space-between;
 }
 
-.logo img {
+.logologo {
     width: 100px;
+    height: auto;
 }
 
 .links .logo {
