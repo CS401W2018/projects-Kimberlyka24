@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>World of Beyblade</title>
+    <title>World of Beyblade - Vote</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -13,35 +14,37 @@
                 <img src="https://placehold.co/100x50" alt="logo">
             </div>
             <div class="menu">
-                <a href="index.html">Home</a>
-                <a href="#">History</a>
-                <a href="beylist.html">Bey List</a>
-                <a href="#">Launcher List</a>
-                <a href="table.html">Top Beys</a>
-                <a href="vote.html" class="active">Vote</a>
+                <a href="index.html">HOME</a>
+                <a href="#">HISTORY</a>
+                <a href="beylist.html">BEY LIST</a>
+                <a href="launcher.html">LAUNCHER LIST</a>
+                <a href="table.html">TOP BEYS</a>
+                <a href="vote.html" class="active">VOTE</a>
+                <a href="#">VIDEOS</a>
+            </div>
             </div>
         </div>
     </nav>
     <header>
-        <h1>Vote for your favorite bey</h1>
+        <h1>VOTE FOR YOUR FAVORITE BEY</h1>
     </header>
     <main>
         <div class="vote-container">
-            <h2>Submit Your Vote</h2>
+            <h2 id="votevote">SUBMIT YOUR VOTE</h2>
             <p>We would love to know your favorite Beyblade! Please fill out the form below:</p>
             <form id="voteForm" method="GET">
                 <div class="formSUD">
                     <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name" required placeholder="Enter your name"><br><br>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name" required><br><br>
                 </div>
                 <div class="formSUD">
                     <label for="age">Age:</label><br>
-                    <input type="number" id="age" name="age" min="1" max="120" required placeholder="Enter your age"><br><br>
+                    <input type="number" id="age" name="age" min="1" max="120" required placeholder="Enter your age" required><br><br>
                 </div>
                 
                 <div class="formSUD">
                     <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" required placeholder="Enter your email"><br><br>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email" required><br><br>
                 </div>
                 
                 <div class="formSUD">
@@ -62,6 +65,7 @@
             <div id="result" class="success"></div>
         </div>
     </main>
+    <div class="clear"></div>
     <footer>
         <small>&copy; 2024 Kim Joshua Dumale</small>
     </footer>
