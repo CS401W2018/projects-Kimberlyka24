@@ -12,6 +12,11 @@ nav {
     justify-content: space-between;
 }
 
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
 .links .logo {
     width: 15%;
 }
@@ -20,6 +25,26 @@ nav {
     display: flex;
     width: 85%;
     justify-content: space-between;
+}
+
+.history {
+    display: flex;
+    justify-content: space-around;
+}
+
+.history img {
+    width: 50%;
+    border-radius: 20px;
+}
+
+.history p {
+    width: 50%;
+    margin-top: 0;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.5);
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .homeDIV {
@@ -214,6 +239,29 @@ aside figcaption, p {
     width: 47%;
 }
 
+.videosTEXT, .intro, .table_p {
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.videosDIV {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: 0 auto;
+    justify-items: center;
+    gap: 10px;
+}
+
+.videosDIV iframe {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
 figure {
     margin: 0;
     padding: 0;
@@ -318,5 +366,9 @@ footer {
 
     .launcher {
         flex-direction: column;
+    }
+
+    .videosDIV {
+        grid-template-columns: 1fr;
     }
 }
